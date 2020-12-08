@@ -8,7 +8,25 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBox />
-    </Grid>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="24*"/>
+		</Grid.RowDefinitions>
+		<CommandBar Height="40" VerticalAlignment="Center" Grid.Row="0">
+			<AppBarToggleButton Icon="Shuffle" Click="AppBarToggleButton_Click"/>
+			<AppBarToggleButton Icon="RepeatAll" Click="AppBarToggleButton_Click"/>
+			<AppBarSeparator/>
+			<AppBarButton Icon="Back" Click="AppBarToggleButton_Click"/>
+			<AppBarButton Icon="Stop" Click="AppBarToggleButton_Click"/>
+			<AppBarButton Icon="Play" Click="AppBarToggleButton_Click"/>
+			<AppBarButton Icon="Forward" Click="AppBarToggleButton_Click"/>
+
+			<CommandBar.SecondaryCommands>
+				<AppBarButton Icon="Like" Label="Like" Click="AppBarToggleButton_Click"/>
+				<AppBarButton Icon="Dislike" Label="Dislike" Click="AppBarToggleButton_Click"/>
+			</CommandBar.SecondaryCommands>
+		</CommandBar>
+		<TextBox Grid.Row="1"/>
+	</Grid>
 </Page>

@@ -26,5 +26,9 @@ namespace ModernWindows.Notepad
         {
             this.InitializeComponent();
         }
+
+        private void AppBarToggleButton_Click(object sender, RoutedEventArgs e) {
+
+        }
     }
 }
