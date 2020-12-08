@@ -27,6 +27,6 @@
 				<AppBarButton Icon="Dislike" Label="Dislike" Click="AppBarToggleButton_Click"/>
 			</CommandBar.SecondaryCommands>
 		</CommandBar>
-		<TextBox Grid.Row="1"/>
+		<RichEditBox Grid.Row="1"/>
 	</Grid>
 </Page>
