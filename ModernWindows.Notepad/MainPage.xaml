@@ -37,42 +37,42 @@
 					Margin="8,8,0,0"/>
 		</Grid>
 		<CommandBar Height="40" VerticalAlignment="Center" Grid.Row="1">
-			<AppBarButton Icon="Save" Click="CommandBarButton">
+			<AppBarButton Name="Save" Icon="Save" Click="CommandBarButton">
 				<AppBarButton.KeyboardAccelerators>
 					<KeyboardAccelerator Modifiers="Control" Key="S" />
 				</AppBarButton.KeyboardAccelerators>
 			</AppBarButton>
-			<AppBarButton Icon="OpenFile" Click="CommandBarButton">
+			<AppBarButton Name="OpenFile" Icon="OpenFile" Click="CommandBarButton">
 				<AppBarButton.KeyboardAccelerators>
 					<KeyboardAccelerator Modifiers="Control" Key="O" />
 				</AppBarButton.KeyboardAccelerators>
 			</AppBarButton>
-			<AppBarButton Icon="Find" Click="CommandBarButton">
+			<AppBarButton Name="Find" Icon="Find" Click="CommandBarButton">
 				<AppBarButton.KeyboardAccelerators>
 					<KeyboardAccelerator Modifiers="Control" Key="F" />
 				</AppBarButton.KeyboardAccelerators>
 			</AppBarButton>
 			<CommandBar.SecondaryCommands>
-				<AppBarButton Icon="OpenFile" Label="New" Click="CommandBarButton">
+				<AppBarButton Name="NewFile" Icon="OpenFile" Label="New" Click="CommandBarButton">
 					<AppBarButton.KeyboardAccelerators>
 						<KeyboardAccelerator Modifiers="Control" Key="N" />
 					</AppBarButton.KeyboardAccelerators>
 				</AppBarButton>
-				<AppBarButton Icon="Filter" Label="Replace" Click="CommandBarButton">
+				<AppBarButton Name="Replace" Icon="Filter" Label="Replace" Click="CommandBarButton">
 					<AppBarButton.KeyboardAccelerators>
 						<KeyboardAccelerator Modifiers="Control" Key="H" />
 					</AppBarButton.KeyboardAccelerators>
 				</AppBarButton>
-				<AppBarButton Icon="Calendar" Label="Insert date and time" Click="CommandBarButton">
+				<AppBarButton Name="AddDate" Icon="Calendar" Label="Insert date and time" Click="CommandBarButton">
 					<AppBarButton.KeyboardAccelerators>
 						<KeyboardAccelerator Key="F5" />
 					</AppBarButton.KeyboardAccelerators>
 				</AppBarButton>
 				<AppBarSeparator/>
-				<AppBarButton Icon="Setting" Label="Settings" Click="CommandBarButton"/>
-				<AppBarButton Icon="ContactInfo" Label="About" Click="CommandBarButton"/>
+				<AppBarButton Name="Setting" Icon="Setting" Label="Settings" Click="CommandBarButton"/>
+				<AppBarButton Name="About" Icon="ContactInfo" Label="About" Click="CommandBarButton"/>
 			</CommandBar.SecondaryCommands>
 		</CommandBar>
-		<RichEditBox Grid.Row="2"/>
+		<RichEditBox Grid.Row="2" x:Name="EditPane" />
 	</Grid>
 </Page>
