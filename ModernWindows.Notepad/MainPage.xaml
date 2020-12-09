@@ -15,7 +15,7 @@
 			<RowDefinition Height="24*"/>
 		</Grid.RowDefinitions>
 
-		<Grid x:Name="AppTitleBar" Background="Transparent" VerticalAlignment="Top" Grid.Row="0">
+		<Grid x:Name="AppTitleBar" Background="Transparent" VerticalAlignment="Top" Grid.Row="0" Height="300">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition x:Name="LeftPaddingColumn" Width="0"/>
 				<ColumnDefinition/>
@@ -37,17 +37,16 @@
 					Margin="8,8,0,0"/>
 		</Grid>
 		<CommandBar Height="40" VerticalAlignment="Center" Grid.Row="1">
-			<AppBarToggleButton Icon="Shuffle" Click="AppBarToggleButton_Click"/>
-			<AppBarToggleButton Icon="RepeatAll" Click="AppBarToggleButton_Click"/>
-			<AppBarSeparator/>
-			<AppBarButton Icon="Back" Click="AppBarToggleButton_Click"/>
-			<AppBarButton Icon="Stop" Click="AppBarToggleButton_Click"/>
-			<AppBarButton Icon="Play" Click="AppBarToggleButton_Click"/>
-			<AppBarButton Icon="Forward" Click="AppBarToggleButton_Click"/>
-
+			<AppBarButton Icon="Save" Click="AppBarToggleButton_Click"/>
+			<AppBarButton Icon="OpenFile" Click="AppBarToggleButton_Click"/>
+			<AppBarButton Icon="Find" Click="AppBarToggleButton_Click"/>
 			<CommandBar.SecondaryCommands>
-				<AppBarButton Icon="Like" Label="Like" Click="AppBarToggleButton_Click"/>
-				<AppBarButton Icon="Dislike" Label="Dislike" Click="AppBarToggleButton_Click"/>
+				<AppBarButton Icon="OpenFile" Label="New" Click="AppBarToggleButton_Click"/>
+				<AppBarButton Icon="Filter" Label="Replace" Click="AppBarToggleButton_Click"/>
+				<AppBarButton Icon="Calendar" Label="Insert date and time" Click="AppBarToggleButton_Click"/>
+				<AppBarSeparator/>
+				<AppBarButton Icon="Setting" Label="Settings" Click="AppBarToggleButton_Click"/>
+				<AppBarButton Icon="ContactInfo" Label="About" Click="AppBarToggleButton_Click"/>
 			</CommandBar.SecondaryCommands>
 		</CommandBar>
 		<RichEditBox Grid.Row="2"/>
